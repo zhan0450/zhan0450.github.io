@@ -7,28 +7,28 @@
 }
 
 nav#nav {
-    border: 5px solid turquoise;
-    background-color: black;
+    border: none;
+    background-color: #003249;
 }
 
 a.nav-link {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: turquoise;
+    font-family: 'Cabin';
+    color: #CCDBDC;
     width: 100%;
 }
 
 a.nav-link:hover {
     text-decoration: underline;
-    color: mediumvioletred;
+    color: #80CED7;
 }
 
 section#home {
-    background-color: midnightblue;
+    background-color: #007EA7;
 }
 
 section#about {
     background-color: rgb(16, 238, 127);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Cabin';
     color: rgb(118, 4, 184);
     padding: 50px 100px;
 }
