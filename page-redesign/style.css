@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+*,*:before, *:after {
+    box-sizing: border-box ; 
+    padding: 0 ;
+    margin: 0 ;  
+}
+
+nav#nav {
+    border: 5px solid turquoise;
+    background-color: black;
+}
+
+a.nav-link {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: turquoise;
+    width: 100%;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+    color: mediumvioletred;
+}
+
+section#home {
+    background-color: midnightblue;
+}
+
+section#about {
+    background-color: rgb(16, 238, 127);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(118, 4, 184);
+    padding: 50px 100px;
+}
+
+button {
+    font-family: 'Cabin';
+}
