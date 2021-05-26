@@ -1,38 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-*,*:before, *:after {
-    box-sizing: border-box ; 
-    padding: 0 ;
-    margin: 0 ;  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 nav#nav {
     border: none;
-    background-color: #003249;
+    background-color: #1F2839;
+    width: 100%;
 }
 
 a.nav-link {
     font-family: 'Cabin';
-    color: #CCDBDC;
+    color: #B69D74;
     width: 100%;
 }
 
 a.nav-link:hover {
     text-decoration: underline;
-    color: #80CED7;
+    color: #F5F5EF;
 }
 
 section#home {
-    background-color: #007EA7;
+    background-color: #F0DAC5;
+    font-family: 'Cabin';
+    color: #50223C;
 }
 
 section#about {
-    background-color: rgb(16, 238, 127);
+    background-color: #343148FF;
     font-family: 'Cabin';
-    color: rgb(118, 4, 184);
+    color: #D7C49EFF;
+    padding: 50px;
+}
+
+#about p {
     padding: 50px 100px;
+}
+
+img.about-image {
+    width: 500px;
+    padding: 0px 100px;
+}
+
+section#contact {
+    background-color: #F3EEED;
+    font-family: 'Cabin';
+    color: #0C2924;
+}
+
+#contact p {
+    text-align: center;
+    padding: 25px;
+}
+
+form.contact-form {
+    background-color: #F3EEED;
+
+    font-family: 'Cabin';
+    color: #0C2924;
+    width: 100%;
 }
 
 button {
     font-family: 'Cabin';
+}
+
+footer {
+    font-family: 'Cabin';
+    padding-left: 10%;
+}
+
+/*I decided that having just 2 Media Queries was enough to handle both movile and tablet view*/
+@media screen and (min-width: 480px) {
+    nav#nav {
+        max-width: 1200px;
+    }
+
+    form.contact-form {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    form.contact-form {
+        max-width: 720px;
+    }
 }
