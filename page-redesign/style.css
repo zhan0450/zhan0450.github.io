@@ -43,7 +43,7 @@ section#about {
     padding: 50px;
 }
 
-/* This padding needs to be seperate from the section#about so it can do so without interfering with all other elements altogether */
+/* This padding needs to be seperate from the section#about so it can do so without interfering with all other the elements altogether */
 #about p {
     padding: 50px 100px;
 }
