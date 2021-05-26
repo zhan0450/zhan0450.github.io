@@ -1,11 +1,16 @@
+/* These are the fonts I've chosen for the modern look of the page*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+/* I mostly use Cabin because it looks great across everything*/
 
+/* padding, margin and box sizing reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Nav bar must align to the dimensions of the screen width*/
 nav#nav {
     border: none;
     background-color: #1F2839;
@@ -13,11 +18,12 @@ nav#nav {
 }
 
 a.nav-link {
-    font-family: 'Cabin';
+    font-family: 'Padauk';
     color: #B69D74;
-    width: 100%;
+    
 }
 
+/* Underlined text and color change is a good way of letting people know when they are hovering over a button */
 a.nav-link:hover {
     text-decoration: underline;
     color: #F5F5EF;
@@ -29,6 +35,7 @@ section#home {
     color: #50223C;
 }
 
+/* Padding is needed here so that there is enough space for the text to have breathing space */
 section#about {
     background-color: #343148FF;
     font-family: 'Cabin';
@@ -36,10 +43,12 @@ section#about {
     padding: 50px;
 }
 
+/* This padding needs to be seperate from the section#about so it can do so without interfering with all other elements together */
 #about p {
     padding: 50px 100px;
 }
 
+/* Tried my best to adjust the image into the words of the paragraph by letting it fit on the left */
 img.about-image {
     width: 500px;
     padding: 0px 100px;
@@ -51,29 +60,32 @@ section#contact {
     color: #0C2924;
 }
 
+/* More breathing space for the text here too */
 #contact p {
     text-align: center;
     padding: 25px;
 }
 
+/* I decided on just letting the contact box blend in with the background this way because it just looks overall alot nicer */
 form.contact-form {
     background-color: #F3EEED;
-
     font-family: 'Cabin';
     color: #0C2924;
     width: 100%;
 }
 
+/* The Send Message button could use a font change too */
 button {
     font-family: 'Cabin';
 }
 
+/* Tried my best to align the footer towards the left-middle of the bottom part of the screen */
 footer {
     font-family: 'Cabin';
     padding-left: 10%;
 }
 
-/*I decided that having just 2 Media Queries was enough to handle both movile and tablet view*/
+/*I decided that having just 2 Media Queries was enough to handle both mobile and tablet port view*/
 @media screen and (min-width: 480px) {
     nav#nav {
         max-width: 1200px;
@@ -84,8 +96,10 @@ footer {
     }
 }
 
+/* This was the best way I could keep the contact box from overextending itself after reaching 720px */
 @media screen and (min-width: 720px) {
     form.contact-form {
         max-width: 720px;
     }
 }
+/*Anything bigger than these demensions might as well just be desktop view*/
